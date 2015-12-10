@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Russo One'), local('RussoOne-Regular'), url(../images/russo_one.woff) format('woff');
+}
+
+body {
+  background-image: url(../images/bg.png);
+  font: 15px/1.33 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #2e2e2e;
+  text-align: center;
+}
+
+a {
+  color: #21E18D;
+  text-decoration: none;
+}
+
+blockquote {
+  background-color: rgba(90, 90, 90, 0.3);
+  border-radius: 10px;
+  padding: 20px 20px 35px 20px;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+#header {
+  text-align: center;
+  padding-top: 10px;
+}
+#header img {
+  max-width: 100%;
+}
+#header span.title {
+  font-family: 'Russo One';
+  color: #21E18D;
+  margin: 0;
+  line-height: 100%;
+  font-weight: normal;
+  font-size: 130px;
+}
+#header h1 {
+  font-family: 'Russo One';
+  color: #ffffff;
+  margin: 0;
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: normal;
+}
+#header h3 {
+  font-family: 'Russo One';
+  font-style: italic;
+  color: #FFF;
+  margin: 20px 0 0 0;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: normal;
+}
+#header blockquote {
+  padding: 1px 0 19px 0;
+}
+
+.source {
+  float: right;
+}
+
+#wrapper {
+  max-width: 1280px;
+  margin: 0 auto -50px auto;
+}
+
+#content {
+  padding: 20px;
+}
+
+.highlight {
+  color: #21E18D;
+}
+
+a:link.tweet, a:visited.tweet {
+  display: block;
+  background-image: url('../images/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  background-color: #DCEAEF;
+  background-size: 40px 40px;
+  padding: 5px 5px 5px 40px;
+  font-size: 13px;
+  color: #0062A0;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:hover.tweet, a:active.tweet {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+#suggest {
+  color: #21E18D;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Russo One';
+}
+
+#twitter-badge {
+  width: 200px;
+  height: 500px;
+  max-height: 100%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+#twitter-badge iframe {
+  width: 200px;
+  height: 500px;
+  border: 0;
+}
+
+#twitter-opt-in {
+  cursor: pointer;
+}
+#twitter-opt-in #twitter-opt-in-show {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 150%;
+}
+#twitter-opt-in #twitter-opt-in-details {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+#next-step p {
+  font-family: 'Russo One';
+  padding: 0 20px;
+  font-size: 14px;
+}
+#next-step a {
+  color: #21E18D;
+  text-decoration: none;
+}
+
+#footer {
+  text-align: center;
+  margin: 50px 0 0 0;
+  padding: 0;
+  color: #777777;
+  font-size: 12px;
+  font-family: arial;
+}
+#footer a {
+  color: #999999;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#embed p {
+  font-family: 'Russo One';
+  font-size: 14px;
+}
+#embed pre {
+  overflow: auto;
+  max-width: 100%;
+  background-color: #000000;
+  color: #00cc00;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.embed-size {
+  background-color: #222222;
+  color: #999999;
+  font-size: 0.8em;
+  padding: 3px 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+.embed-size.active {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  body {
+    font: 20px/1.33 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  }
+
+  #header img {
+    width: 240px;
+  }
+  #header h1 {
+    display: inline-block;
+    font-size: 45px;
+  }
+
+  a:link.tweet, a:visited.tweet {
+    background-size: 40px 40px;
+    padding: 15px 15px 15px 80px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  #header img {
+    width: 384px;
+  }
+  #header h1 {
+    display: inline-block;
+    font-size: 80px;
+  }
+
+  #content {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  #embed pre {
+    width: 786px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1230px) {
+  #twitter-badge {
+    display: block;
+  }
+}
